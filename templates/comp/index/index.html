@@ -1,0 +1,147 @@
+{% extends 'comp/base1.html' %} {% load static %} {% block title %} Home
+{%endblock %} {% block body %}
+<div>
+  <br />
+  {% include 'comp/incl/intro.html' %}
+</div>
+<!-- {% comment %} Featured Projects {% endcomment %} -->
+<div class="container-fluid mt-3">
+  <h2 class="text-center m-3">Featured Software Development Projects</h2>
+  <hr class="my-4" />
+  <div class="card-deck">
+    <!-- {% comment %} card one {% endcomment %} -->
+    <!-- {% comment %} Card one {% endcomment %} -->
+    <div class="card">
+      <div class="card-header d-flex justify-content-around">
+        <h6 class="card-text card-desc">KAFOSA Website</h6>
+      </div>
+      <img
+        class="card-img-top card-image"
+        src="{% static 'comp/img/kafosa.png' %}"
+        alt="Kafosa website website"
+        loading="lazy"
+      />
+      <div class="card-body">
+        <p class="card-text">Kenya Association of FOSAS(KAFOSA) Website</p>
+        <a href="https://kafosa.or.ke/" class="stretched1-link" target="_blank "
+          ><button type="button" class="btn btn-secondary">
+            View Project
+          </button></a
+        >
+      </div>
+    </div>
+
+    <!-- {% comment %} Card two {% endcomment %} -->
+    <div class="card">
+      <div class="card-header d-flex justify-content-around">
+        <h6 class="card-text card-desc">Akiki Interior and Decor Website</h6>
+      </div>
+      <img
+        class="card-img-top card-image"
+        src="{% static 'comp/img/akiki.jpg' %}"
+        alt="Akiki Interior and Decor"
+        loading="lazy"
+      />
+      <div class="card-body">
+        <p class="card-text">Akiki Interior and Deocor website.</p>
+        <a
+          href="https://www.akikiinterior.com/"
+          class="stretched1-link"
+          target="_blank "
+          ><button type="button" class="btn btn-secondary">
+            View Project
+          </button></a
+        >
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header d-flex justify-content-around">
+        <h5 class="card-text card-desc">ICT Assets Management System</h5>
+      </div>
+      <img
+        class="card-img-top card-image"
+        src="{% static 'comp/img/fav.png' %}"
+        alt="ICT Asset Management
+           System"
+        loading="lazy"
+      />
+      <div class="card-body">
+        <p class="card-text">A Portal to automate management of ICT assets.</p>
+        <a
+          href="https://www.youtube.com/watch?v=V2WC3jupVgM"
+          class="stretched1-link"
+          target="_blank "
+          ><button type="button" class="btn btn-secondary">
+            View Project
+          </button></a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- {% comment %} Why Choose me {% endcomment %} -->
+<div class="row mt-3">
+  <div class="col-md-12">
+    <h2 class="m-3 text-center">Why Choose me?</h2>
+    <hr class="my-4" />
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4" class="text-center">
+      <h4 class="text-center title">I am passionate about what I do</h4>
+      <p class="text-center desc">
+        My passion has always been to provide a premium level of professional,
+        reliable, quality and timely service delivery to my clients.
+      </p>
+    </div>
+    <div class="col-md-4" class="text-center">
+      <h4 class="text-center title">Competitive Prices</h4>
+      <p class="text-center desc">
+        I quarantee no hidden charges from a wide selection of quality services.
+        I are able to offer prices that are transparent and among the most
+        competitive.
+      </p>
+    </div>
+    <div class="col-md-4" class="text-center">
+      <h4 class="text-center title">Proven track record</h4>
+      <p class="text-center desc">
+        I have gained a reputation as a reliable and honest service provider in
+        the last few years with most of our customers coming from referrals.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Lets connect social media -->
+<div class="row mt-3">
+  <div class="col-md-12">
+    <h2 class="m-3 text-center">Lets Connect</h2>
+    <hr class="my-4" />
+  </div>
+</div>
+<div class="container-fluid mb-2">
+  <div class="row text-center justify-content-center">
+    <div
+      class="col-sm-12 col-md-12 col-lg-12 text-center justify-content-center"
+    >
+      <a href="https://www.facebook.com/ndongaamos " target="_blank "
+        ><i class="fab fa-facebook fa-5x p-2"></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/amos-ndonga-762339115/ "
+        target="_blank "
+        ><i class="fa fa-linkedin-square fa-5x p-2"></i
+      ></a>
+      <a href="https://twitter.com/amosn593 " target="_blank "
+        ><i class="fab fa-twitter fa-5x p-2"></i
+      ></a>
+      <a href="https://github.com/amosn593 " target="_blank "
+        ><i class="fab fa-github fa-5x p-2"></i
+      ></a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

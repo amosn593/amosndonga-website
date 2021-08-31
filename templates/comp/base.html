@@ -1,0 +1,116 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>{% block title %}{% endblock %} | AN Technologies</title>
+  <meta name="google-site-verification" content="hbMlPUS3rVMDtM_ESyfm0P4sPIGR2CzqS-Oyexfytn0" />
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="description" content="AN Technologies offers wide range of services including soffware development(websites, blogs and ecommerce), ICT Assets repair, SOHO network setup and troubleshooting, CCTV installation, Software development tutoring and general ICT consultancy.">
+  <meta name="keywords"
+        content="ICT support services, ICT Assets repair, SOHO, networking,cctv installation, amos ndonga, mombasa, mkomani, Software development tutoring, general ICT consultancy">
+  <meta name="author" content="amos ndonga, +254702240787 amosndonga@gmail.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  {% comment %}
+  <!-- Bootstrap CSS & JS --> {% endcomment %}
+
+  <link rel="stylesheet" href="{% static 'comp/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'comp/css/toastr.min.css' %}">
+  <script src="{% static 'comp/js/jquery-3.4.0.js' %}"></script>
+  <script src="{% static 'comp/js/popper.min.js' %}"></script>
+  <script src="{% static 'comp/js/bootstrap.min.js' %}"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <!-- Fontawesome Icons -->
+  <script src="https://kit.fontawesome.com/3a5994e29b.js" crossorigin="anonymous"></script>
+
+  {% comment %}
+  <!----CSS--> {% endcomment %}
+  <link rel="stylesheet" type="text/css" href="{% static 'comp/css/main.css' %}">
+  <link rel="shortcut icon" href="{% static 'img/fav.png' %}" type="image/x-icon">
+</head>
+
+<body>
+
+  {% comment %}
+  <!----Header--> {% endcomment %}
+  <div class="container-fluid mb-2">
+    <div class="row top-nav">
+      <div class="col-xsm-12 col-sm-12 col-md-3 d-flex justify-content-center ">
+        <i class="fas fa-envelope fa-2x"></i>
+        <h4 class="ml-2">amosndonga@gmail.com</h4>
+
+
+      </div>
+      <div class="col-xsm-12 col-sm-12 col-md-6 d-flex justify-content-center">
+        <h2 class="lead">IDENTIFY ~ DIAGNOSE ~ RESOLVE ~ DOCUMENT</h2>
+      </div>
+      <div class="col-xsm-12 col-sm-12 col-md-3 d-flex justify-content-center">
+        <i class="fas fa-phone fa-2x"></i>
+        <h4 class="ml-2">
+          <a href="tel:+254702240787" class="link">+254702240787</a>
+        </h4>
+      </div>
+    </div>
+  </div>
+
+  {% comment %} <marquee behavior="scroll" direction="left">
+    <p class="scroll">Paperless Office, Process Automation, ICT Cost optimization measures,
+      Online Presence.
+    </p>
+  </marquee> {% endcomment %}
+
+  {% comment %}
+  <!---Navbar--> {% endcomment %}
+  <div class="container-fluid sticky">
+    <div class="nav-list">
+      <ul class="nav d-flex justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'home' %}">
+            <h6>HOME</h6>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'profile' %}">
+            <h6>PROFILE</h6>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'services' %}">
+            <h6>OUR SERVICES</h6>
+          </a>
+        </li>
+        {% comment %} <li class="nav-item">
+          <a class="nav-link" href="{% url 'products' %}">
+            <h6>COURSES</h6>
+          </a>
+        </li> {% endcomment %}
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'contact' %}">
+            <h6>CONTACT US</h6>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!---Content block-->
+  <div class="container-fluid" style="padding-bottom: 3.5rem;">
+    {% block body %}{% endblock %}
+
+  </div>
+  <br> <br>
+
+  <!---Footer-->
+  <div class="foot">
+    <p>Copyright &copy; 2021 | Amos Ndonga | All Rights Reserved.
+    </p>
+    <p>+254702240787, amosndonga@gmail.com</p>
+  </div>
+</body>
+
+</html>

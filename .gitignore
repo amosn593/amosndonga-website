@@ -1,0 +1,11 @@
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+venv
+
+repair/.env
+db.sqlite3
+staticfiles
+google1024cb16d8b6dc50.html

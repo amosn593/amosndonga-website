@@ -1,0 +1,46 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="{% url 'home' %}">
+    <img
+      src="{% static 'comp/img/ndosh.png' %}"
+      class="rounded logo"
+      alt="LOGO"
+    />
+  </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'home' %}">
+          <i class="fa fa-home p-1" aria-hidden="true"></i>HOME
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'services' %}">
+          <i class="fas fa-tools p-1"></i>OUR SERVICES</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'contact' %}">
+          <i class="fas fa-address-card p-1"></i>CONTACT US</a
+        >
+      </li>
+      {% comment %}
+      <li>
+        <a href="tel:+254702240787"><i class="fas fa-phone fa-2x"></i></a>
+      </li>
+      {% endcomment %}
+    </ul>
+  </div>
+</nav>
