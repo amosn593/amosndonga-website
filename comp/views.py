@@ -15,7 +15,6 @@ def profile(request):
     return render(request, "comp/about/about.html")
 
 
-
 # Services view
 def service(request):
     return render(request, "comp/services/services.html")

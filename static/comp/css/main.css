@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -27,22 +28,22 @@ h6 {
 
 /* Top Nav */
 
-.top-nav {
-  color: #f9f9f9 !important;
-  padding: 12px;
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-}
-
-.bg-light {
+.mynavbar {
   color: #f9f9f9 !important;
   background-color: rgb(224, 27, 27) !important;
-  height: 56px !important;
-  /* height: 40px !important; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+.page-content {
+  margin-top: 70px !important;
+  margin-bottom: 30px !important;
 }
 
 .lead {
-  font-weight: 500;
+  font-weight: 500 !important;
 }
 
 /* Navbar */
@@ -66,13 +67,15 @@ h6 {
   text-decoration: none;
 }
 
+.nav-item {
+  padding: 10px 20px !important;
+}
+
 .nav-item a:hover {
   color: #fff !important;
   text-align: center;
   font-weight: 700;
   text-decoration: none;
-  /* border-radius: 2px; */
-  /* background-color: rgb(43, 179, 25); */
 }
 
 /* block content */
@@ -132,7 +135,13 @@ ul li {
 /* Social Media */
 
 /* Home , services */
-
+.intro-top {
+  padding: 10px 20px !important;
+  background-color: #314351 !important;
+  color: #fff;
+  font-family: "Jost", sans-serif;
+  /* font-size: 16px !important; */
+}
 .services {
   background-color: #f0f0d0;
 }
@@ -155,12 +164,6 @@ ul li {
 
 /* Media query */
 
-@media screen and (min-width: 576px) {
-  .bg-light {
-    height: 40px !important;
-  }
-}
-
 @media screen and (max-width: 576px) {
   .slided {
     margin-top: 15px !important;
@@ -170,12 +173,7 @@ ul li {
   .card-image {
     height: 20vh !important;
   }
-  .bg-light {
-    color: #f9f9f9 !important;
-    background-color: rgb(224, 27, 27) !important;
-    /* margin-bottom: 100px !important; */
-    /* height: 56px !important; */
-  }
+
   .mobile {
     margin-top: 60px !important;
     /* margin-bottom: 150px !important; */
