@@ -20,21 +20,18 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-3">
-      <li class="nav-item">
-        <a class="nav-link" href="{% url 'home' %}">
-          <i class="fa fa-home p-1" aria-hidden="true"></i>HOME
-        </a>
+      <li class="nav-item d-flex">
+        <i class="fa fa-home mx-1 p-1" aria-hidden="true"></i>
+        <a class="nav-link" href="{% url 'home' %}"> HOME </a>
       </li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="{% url 'services' %}">
-          <i class="fas fa-tools p-1"></i>OUR SERVICES</a
-        >
+      <li class="nav-item d-flex">
+        <i class="fas fa-tools mx-1 p-1"></i>
+        <a class="nav-link" href="{% url 'services' %}"> OUR SERVICES</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{% url 'contact' %}">
-          <i class="fas fa-address-card p-1"></i>CONTACT US</a
-        >
+      <li class="nav-item d-flex">
+        <i class="fas fa-address-card mx-1 p-1"></i>
+        <a class="nav-link" href="{% url 'contact' %}"> CONTACT US</a>
       </li>
     </ul>
   </div>
