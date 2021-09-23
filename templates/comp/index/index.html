@@ -5,76 +5,86 @@
   {% include 'comp/incl/intro.html' %}
 </div>
 <!-- {% comment %} Featured Projects {% endcomment %} -->
-<div class="container-fluid my-3">
+<div class="container-fluid my-4 py-3">
   <h2 class="text-center my-3">Featured Software Development Projects</h2>
   <hr class="my-4" />
-  <div class="card-deck">
+  <div class="row">
     <!-- {% comment %} card one {% endcomment %} -->
     <!-- {% comment %} Card one {% endcomment %} -->
-    <div class="card">
-      <div class="card-header d-flex justify-content-around">
-        <h6 class="card-text card-desc">KAFOSA Website</h6>
-      </div>
-      <img
-        class="card-img-top card-image"
-        src="{% static 'comp/img/kafosa.png' %}"
-        alt="Kafosa website website"
-        loading="lazy"
-      />
-      <div class="card-body">
-        <p class="card-text">Kenya Association of FOSAS(KAFOSA) Website</p>
-        <a href="https://kafosa.or.ke/" class="stretched1-link" target="_blank "
-          ><button type="button" class="btn btn-secondary">
-            View Project
-          </button></a
-        >
-      </div>
-    </div>
-
-    <!-- {% comment %} Card two {% endcomment %} -->
-    <div class="card">
-      <div class="card-header d-flex justify-content-around">
-        <h6 class="card-text card-desc">Akiki Interior and Decor Website</h6>
-      </div>
-      <img
-        class="card-img-top card-image"
-        src="{% static 'comp/img/akiki.jpg' %}"
-        alt="Akiki Interior and Decor"
-        loading="lazy"
-      />
-      <div class="card-body">
-        <p class="card-text">Akiki Interior and Deocor website.</p>
-        <a
-          href="https://www.akikiinterior.com/"
-          class="stretched1-link"
-          target="_blank "
-          ><button type="button" class="btn btn-secondary">
-            View Project
-          </button></a
-        >
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header d-flex justify-content-around">
+          <h6 class="card-text card-desc">KAFOSA Website</h6>
+        </div>
+        <img
+          class="card-img-top card-image"
+          src="{% static 'comp/img/kafosa.png' %}"
+          alt="Kafosa website website"
+          loading="lazy"
+        />
+        <div class="card-body">
+          <p class="card-text">Kenya Association of FOSAS(KAFOSA) Website</p>
+          <a
+            href="https://kafosa.or.ke/"
+            class="stretched1-link"
+            target="_blank "
+            ><button type="button" class="btn btn-secondary">
+              View Project
+            </button></a
+          >
+        </div>
       </div>
     </div>
-    <div class="card">
-      <div class="card-header d-flex justify-content-around">
-        <h5 class="card-text card-desc">ICT Assets Management System</h5>
+    <div class="col-md-4">
+      <!-- {% comment %} Card two {% endcomment %} -->
+      <div class="card">
+        <div class="card-header d-flex justify-content-around">
+          <h6 class="card-text card-desc">Akiki Interior and Decor Website</h6>
+        </div>
+        <img
+          class="card-img-top card-image"
+          src="{% static 'comp/img/akiki.jpg' %}"
+          alt="Akiki Interior and Decor"
+          loading="lazy"
+        />
+        <div class="card-body">
+          <p class="card-text">Akiki Interior and Deocor website.</p>
+          <a
+            href="https://www.akikiinterior.com/"
+            class="stretched1-link"
+            target="_blank "
+            ><button type="button" class="btn btn-secondary">
+              View Project
+            </button></a
+          >
+        </div>
       </div>
-      <img
-        class="card-img-top card-image"
-        src="{% static 'comp/img/fav.png' %}"
-        alt="ICT Asset Management
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header d-flex justify-content-around">
+          <h5 class="card-text card-desc">ICT Assets Management System</h5>
+        </div>
+        <img
+          class="card-img-top card-image"
+          src="{% static 'comp/img/fav.png' %}"
+          alt="ICT Asset Management
            System"
-        loading="lazy"
-      />
-      <div class="card-body">
-        <p class="card-text">A Portal to automate management of ICT assets.</p>
-        <a
-          href="https://www.youtube.com/watch?v=V2WC3jupVgM"
-          class="stretched1-link"
-          target="_blank "
-          ><button type="button" class="btn btn-secondary">
-            View Project
-          </button></a
-        >
+          loading="lazy"
+        />
+        <div class="card-body">
+          <p class="card-text">
+            A Portal to automate management of ICT assets.
+          </p>
+          <a
+            href="https://www.youtube.com/watch?v=V2WC3jupVgM"
+            class="stretched1-link"
+            target="_blank "
+            ><button type="button" class="btn btn-secondary">
+              View Project
+            </button></a
+          >
+        </div>
       </div>
     </div>
   </div>
@@ -115,31 +125,49 @@
 </div>
 
 <!-- Lets connect social media -->
-<div class="row mt-3">
+<div class="row mt-3 testimony">
   <div class="col-md-12">
-    <h2 class="m-3 text-center">Lets Connect</h2>
-    <hr class="my-4" />
-  </div>
-</div>
-<div class="container-fluid mb-2">
-  <div class="row text-center justify-content-center">
-    <div
-      class="col-sm-12 col-md-12 col-lg-12 text-center justify-content-center"
-    >
-      <a href="https://www.facebook.com/ndongaamos " target="_blank "
-        ><i class="fab fa-facebook fa-5x p-2"></i
-      ></a>
-      <a
-        href="https://www.linkedin.com/in/amos-ndonga-762339115/ "
-        target="_blank "
-        ><i class="fa fa-linkedin-square fa-5x p-2"></i
-      ></a>
-      <a href="https://twitter.com/amosn593 " target="_blank "
-        ><i class="fab fa-twitter fa-5x p-2"></i
-      ></a>
-      <a href="https://github.com/amosn593 " target="_blank "
-        ><i class="fab fa-github fa-5x p-2"></i
-      ></a>
+    <h2 class="m-3 text-center">TESTIMONIALS</h2>
+    <div class="row py-4">
+      <div class="col-md-4 my-2 py-2">
+        <div class="d-flex">
+          <img
+            src="{% static 'comp/img/kafosa_chair.jpeg' %}"
+            class="client-image"
+            alt="kafosa chairperson"
+          />
+          <div class="mx-2 px-2">
+            <p>kafosa</p>
+            <p>Isedorious Agola, Chairperson KAFOSA</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 my-2 py-2">
+        <div class="d-flex">
+          <img
+            src="{% static 'comp/img/kafosa_chair.jpeg' %}"
+            class="client-image"
+            alt="CEO Rol Properties"
+          />
+          <div class="mx-2 px-2">
+            <p>Rol Properties</p>
+            <p>Cedric Miheso, CEO Rol Properties</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 my-2 py-2">
+        <div class="d-flex">
+          <img
+            src="{% static 'comp/img/kafosa_chair.jpeg' %}"
+            class="client-image"
+            alt="CEO Akiki Interior and Decor"
+          />
+          <div class="mx-2 px-2">
+            <p>Akiki Interior and Decor</p>
+            <p>Kisilu Amos, CEO Akiki Interior and Decor</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

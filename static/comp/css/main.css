@@ -13,7 +13,7 @@ body {
   /* font-family: "Playfair Display", sans-serif; */
   font-family: "Zilla Slab", serif;
   position: relative;
-  background-color: #fff;
+  background-color: #ececec;
   min-height: 100vh;
 }
 
@@ -67,24 +67,29 @@ h6 {
   color: #f2f2f2 !important;
   text-align: center;
   font-size: large;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
 }
 
 .nav-link:hover {
   color: #111010 !important;
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
+}
+
+.nav-contact {
+  font-weight: 500 !important;
 }
 
 /* block content */
 
 /* Index */
 
-/* ul li { */
-/* list-style-type: none; */
-/* } */
+ul li {
+  list-style-type: square;
+  list-style-position: inside;
+}
 
 .myphoto {
   height: 25vh;
@@ -146,6 +151,19 @@ h6 {
   background-color: #f0f0d0;
 }
 
+.testimony {
+  color: #fff;
+  background-color: #266dd1 !important;
+  padding: 15px 20px !important;
+  margin-bottom: -40px !important;
+}
+
+.client-image {
+  border-radius: 50% !important;
+  width: 120px !important;
+  height: 104px !important;
+}
+
 /* footer */
 
 .foot {
@@ -161,6 +179,20 @@ h6 {
   width: 100%;
   height: 8rem;
   font-size: 14px;
+}
+
+.social {
+  color: #fff !important;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  -ms-transition: -ms-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+}
+
+.social:hover {
+  color: rgb(53, 49, 49) !important;
+  transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
 }
 
 /* Media query */
@@ -183,8 +215,15 @@ h6 {
     margin-top: 80px !important;
     /* margin-bottom: 150px !important; */
   }
+  .testimony {
+    color: #fff;
+    background-color: #266dd1 !important;
+    padding: 15px 20px !important;
+    margin-bottom: 30px !important;
+  }
+
   .foot {
-    height: 9rem;
+    height: 200px !important;
     margin-top: 100px !important;
   }
 }

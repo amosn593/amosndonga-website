@@ -19,20 +19,21 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-3">
+    <ul class="navbar-nav me-auto">
       <li class="nav-item d-flex">
-        <i class="fa fa-home mx-1 p-1" aria-hidden="true"></i>
         <a class="nav-link" href="{% url 'home' %}"> HOME </a>
       </li>
 
       <li class="nav-item d-flex">
-        <i class="fas fa-tools mx-1 p-1"></i>
         <a class="nav-link" href="{% url 'services' %}"> OUR SERVICES</a>
       </li>
       <li class="nav-item d-flex">
-        <i class="fas fa-address-card mx-1 p-1"></i>
         <a class="nav-link" href="{% url 'contact' %}"> CONTACT US</a>
       </li>
     </ul>
+    <div class="d-flex">
+      <p class="me-2 px-2 nav-contact">+254702240787</p>
+      <p class="me-2 px-2 nav-contact">info@amosndonga.co.ke</p>
+    </div>
   </div>
 </nav>
