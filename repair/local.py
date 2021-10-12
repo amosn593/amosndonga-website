@@ -52,6 +52,17 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
+# Sending gmail mail
+
+# Email Set Up
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = config('EMAIL_HOST')
+EMAIL_PORT = config('EMAIL_PORT')
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True
+
 CORS_REPLACE_HTTPS_REFERER = False
 HOST_SCHEME = "http://"
 SECURE_PROXY_SSL_HEADER = None

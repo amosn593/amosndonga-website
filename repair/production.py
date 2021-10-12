@@ -4,9 +4,9 @@ from .base import *
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['www.amosndonga.co.ke', 'amosndonga.co.ke']
+ALLOWED_HOSTS = ['www.amosndonga.com', 'amosndonga.com']
 
 # Application definition
 
@@ -47,6 +47,18 @@ DATABASES = {
 }
 
 
+# Sending gmail mail
+
+# Email Set Up
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = config('EMAIL_HOST')
+EMAIL_PORT = config('EMAIL_PORT')
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True
+
+
 STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
@@ -67,5 +79,4 @@ SECURE_HSTS_PRELOAD = True
 SECURE_SSL_REDIRECT = True
 
 SECURE_REFERRER_POLICY = "strict-origin"
-SECURE_BROWSER_XSS_FILTER = Tr
-ue
+SECURE_BROWSER_XSS_FILTER = True

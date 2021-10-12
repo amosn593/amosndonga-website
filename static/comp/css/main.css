@@ -38,8 +38,13 @@ h6 {
 }
 
 .page-content {
+  margin-top: 60px !important;
+  padding-bottom: 202px !important;
+}
+
+.mobile {
   margin-top: 100px !important;
-  margin-bottom: 30px !important;
+  margin-bottom: 100px !important;
 }
 
 .lead {
@@ -125,10 +130,6 @@ ul li {
   margin-top: 30px;
 }
 
-.slided {
-  height: 80vh !important;
-}
-
 .h5 {
   color: #fff;
   font-weight: 700;
@@ -154,8 +155,16 @@ ul li {
 .testimony {
   color: #fff;
   background-color: #266dd1 !important;
-  padding: 15px 20px !important;
-  margin-bottom: -40px !important;
+}
+
+.other_projects {
+  color: #fff;
+}
+
+.other_projects:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #266dd1;
 }
 
 .client-image {
@@ -167,9 +176,8 @@ ul li {
 /* footer */
 
 .foot {
-  margin-top: 50px;
-  padding-top: 50px !important;
-  padding-bottom: 15px;
+  /* margin-top: 30px !important; */
+  /* padding-top: 30px !important; */
   text-align: center;
   align-items: center;
   color: white;
@@ -177,7 +185,6 @@ ul li {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 8rem;
   font-size: 14px;
 }
 
@@ -198,32 +205,22 @@ ul li {
 /* Media query */
 
 @media screen and (max-width: 576px) {
-  .slided {
-    margin-top: 15px !important;
-    width: 100%;
-    height: 43vh !important;
-  }
   .card-image {
     height: 20vh !important;
   }
 
   .page-content {
-    margin-top: 115px !important;
+    margin-top: 55px !important;
+    padding-bottom: 300px !important;
   }
 
   .mobile {
-    margin-top: 80px !important;
-    /* margin-bottom: 150px !important; */
+    margin-top: 90px !important;
+    margin-bottom: 100px !important;
   }
   .testimony {
-    color: #fff;
-    background-color: #266dd1 !important;
-    padding: 15px 20px !important;
-    margin-bottom: 30px !important;
-  }
-
-  .foot {
-    height: 200px !important;
-    margin-top: 100px !important;
-  }
+  color: #fff;
+  background-color: #266dd1 !important;
+  margin-bottom: 100px !important;
+}
 }

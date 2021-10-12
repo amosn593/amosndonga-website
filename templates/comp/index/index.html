@@ -8,10 +8,10 @@
 <div class="container-fluid my-4 py-3">
   <h2 class="text-center my-3">Featured Software Development Projects</h2>
   <hr class="my-4" />
-  <div class="row">
+  <div class="row my-3 py-4">
     <!-- {% comment %} card one {% endcomment %} -->
     <!-- {% comment %} Card one {% endcomment %} -->
-    <div class="col-md-4">
+    <div class="col-md-4 my-2 py-2">
       <div class="card">
         <div class="card-header d-flex justify-content-around">
           <h6 class="card-text card-desc">KAFOSA Website</h6>
@@ -35,7 +35,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 my-2 py-2">
       <!-- {% comment %} Card two {% endcomment %} -->
       <div class="card">
         <div class="card-header d-flex justify-content-around">
@@ -60,24 +60,22 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 my-2 py-2">
       <div class="card">
         <div class="card-header d-flex justify-content-around">
-          <h5 class="card-text card-desc">ICT Assets Management System</h5>
+          <h6 class="card-text card-desc">Rol Properties Website</h6>
         </div>
         <img
           class="card-img-top card-image"
-          src="{% static 'comp/img/fav.png' %}"
+          src="{% static 'comp/img/rolproperties.jpeg' %}"
           alt="ICT Asset Management
            System"
           loading="lazy"
         />
         <div class="card-body">
-          <p class="card-text">
-            A Portal to automate management of ICT assets.
-          </p>
+          <p class="card-text">Rol Properties Website.</p>
           <a
-            href="https://www.youtube.com/watch?v=V2WC3jupVgM"
+            href="https://rolproperties.com/"
             class="stretched1-link"
             target="_blank "
             ><button type="button" class="btn btn-secondary">
@@ -91,23 +89,25 @@
 </div>
 
 <!-- {% comment %} Why Choose me {% endcomment %} -->
-<div class="row mt-3">
+<div class="row my-3 py-4">
   <div class="col-md-12">
     <h2 class="m-3 text-center">Why Choose me?</h2>
-    <hr class="my-4" />
+    <hr class="my-2" />
   </div>
 </div>
 <div class="container-fluid">
-  <div class="row">
+  <div class="row my-3 py-3">
     <div class="col-md-4" class="text-center">
-      <h4 class="text-center title">I am passionate about what I do</h4>
+      <h4 class="my-2 py-2 text-center title">
+        I am passionate about what I do
+      </h4>
       <p class="text-center desc">
         My passion has always been to provide a premium level of professional,
         reliable, quality and timely service delivery to my clients.
       </p>
     </div>
     <div class="col-md-4" class="text-center">
-      <h4 class="text-center title">Competitive Prices</h4>
+      <h4 class="my-2 py-2 text-center title">Competitive Prices</h4>
       <p class="text-center desc">
         I quarantee no hidden charges from a wide selection of quality services.
         I are able to offer prices that are transparent and among the most
@@ -115,7 +115,7 @@
       </p>
     </div>
     <div class="col-md-4" class="text-center">
-      <h4 class="text-center title">Proven track record</h4>
+      <h4 class="my-2 py-2 text-center title">Proven track record</h4>
       <p class="text-center desc">
         I have gained a reputation as a reliable and honest service provider in
         the last few years with most of our customers coming from referrals.
@@ -124,48 +124,59 @@
   </div>
 </div>
 
-<!-- Lets connect social media -->
-<div class="row mt-3 testimony">
-  <div class="col-md-12">
-    <h2 class="m-3 text-center">TESTIMONIALS</h2>
-    <div class="row py-4">
-      <div class="col-md-4 my-2 py-2">
-        <div class="d-flex">
-          <img
-            src="{% static 'comp/img/kafosa_chair.jpeg' %}"
-            class="client-image"
-            alt="kafosa chairperson"
-          />
-          <div class="mx-2 px-2">
-            <p>kafosa</p>
-            <p>Isedorious Agola, Chairperson KAFOSA</p>
-          </div>
+<!-- Testimonials -->
+<div class="container-fluid my-3 py-4 testimony">
+  <div class="row my-2 py-3">
+    <div class="col-md-12 my-2 py-2">
+      <h2 class="text-center">TESTIMONIALS</h2>
+    </div>
+  </div>
+  <div class="row my-4 py-4">
+    <div class="col-md-4 my-2 py-2">
+      <div class="d-flex">
+        <img
+          src="{% static 'comp/img/kafosa_chair.jpeg' %}"
+          class="client-image"
+          alt="kafosa chairperson"
+        />
+        <div class="mx-2 px-2">
+          <p>
+            A Very Professionl and dedicated software developer, and delivers
+            projects on time
+          </p>
+          <p>Isedorious Agola, Chairperson KAFOSA</p>
         </div>
       </div>
-      <div class="col-md-4 my-2 py-2">
-        <div class="d-flex">
-          <img
-            src="{% static 'comp/img/kafosa_chair.jpeg' %}"
-            class="client-image"
-            alt="CEO Rol Properties"
-          />
-          <div class="mx-2 px-2">
-            <p>Rol Properties</p>
-            <p>Cedric Miheso, CEO Rol Properties</p>
-          </div>
+    </div>
+    <div class="col-md-4 my-2 py-2">
+      <div class="d-flex">
+        <img
+          src="{% static 'comp/img/avatar.jpg' %}"
+          class="client-image"
+          alt="CEO Rol Properties"
+        />
+        <div class="mx-2 px-2">
+          <p>
+            A very creative and dynamic software developer. Delivers quality
+            services
+          </p>
+          <p>Cedric Miheso, CEO Rol Properties</p>
         </div>
       </div>
-      <div class="col-md-4 my-2 py-2">
-        <div class="d-flex">
-          <img
-            src="{% static 'comp/img/kafosa_chair.jpeg' %}"
-            class="client-image"
-            alt="CEO Akiki Interior and Decor"
-          />
-          <div class="mx-2 px-2">
-            <p>Akiki Interior and Decor</p>
-            <p>Kisilu Amos, CEO Akiki Interior and Decor</p>
-          </div>
+    </div>
+    <div class="col-md-4 my-2 py-4">
+      <div class="d-flex">
+        <img
+          src="{% static 'comp/img/avatar.jpg' %}"
+          class="client-image"
+          alt="CEO Akiki Interior and Decor"
+        />
+        <div class="mx-2 px-2">
+          <p>
+            A cost friendly software developer, I would recommend him to other
+            businesses
+          </p>
+          <p>Kisilu Amos, CEO Akiki Interior and Decor</p>
         </div>
       </div>
     </div>
