@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+
+:root {
+  --body-bg: #ececec;
+  --nav-bg: rgb(224, 27, 27);
+  --footer-bg: #ececec;
+}
 * {
   margin: 0;
   padding: 0;
@@ -11,9 +17,9 @@
 
 body {
   /* font-family: "Playfair Display", sans-serif; */
-  font-family: "Zilla Slab", serif;
+  font-family: "Zilla Slab", sans-serif;
   position: relative;
-  background-color: #ececec;
+  background-color: var(--body-bg);
   min-height: 100vh;
 }
 
@@ -26,21 +32,10 @@ h6 {
   font-weight: 400;
 }
 
-/* Top Nav */
-
-.mynavbar {
-  color: #f9f9f9 !important;
-  background-color: rgb(224, 27, 27) !important;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10000;
-}
-
 .page-content {
-  padding: 15px 20px;
-  margin-top: 30px;
-  padding-bottom: 202px;
+  padding: 2% 2%;
+  margin-top: 2%;
+  padding-bottom: 15%;
   max-width: 100%;
 }
 
@@ -54,6 +49,16 @@ h6 {
 }
 
 /* Navbar */
+/* Top Nav */
+
+.mynavbar {
+  color: #f9f9f9 !important;
+  background-color: var(--nav-bg) !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
 
 .logo {
   margin-top: 3px;
@@ -91,6 +96,20 @@ h6 {
 
 .nav-contact {
   font-weight: 400 !important;
+}
+
+/* Intro */
+.intro-logo {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.intro-top {
+  padding: 15px 20px;
+  background-color: #314351;
+  color: #fff;
+  font-family: "Jost", sans-serif;
+  width: 100% !important;
 }
 
 /* block content */
@@ -147,13 +166,7 @@ ul li {
 /* Social Media */
 
 /* Home , services */
-.intro-top {
-  padding: 15px 20px;
-  background-color: #314351;
-  color: #fff;
-  font-family: "Jost", sans-serif;
-  width: 100% !important;
-}
+
 .services {
   background-color: #f0f0d0;
 }
@@ -161,16 +174,6 @@ ul li {
 .testimony {
   color: #fff;
   background-color: #266dd1 !important;
-}
-
-.other_projects {
-  color: #fff;
-}
-
-.other_projects:hover {
-  text-decoration: none;
-  cursor: pointer;
-  color: #266dd1;
 }
 
 .client-image {
@@ -206,6 +209,16 @@ ul li {
   -webkit-transform: rotate(360deg);
 }
 
+.other_projects {
+  color: #fff;
+}
+
+.other_projects:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--nav-bg);
+}
+
 /* Media query */
 
 @media screen and (max-width: 576px) {
@@ -214,8 +227,8 @@ ul li {
   }
 
   .page-content {
-    margin-top: 30px !important;
-    padding-bottom: 300px !important;
+    margin-top: 10% !important;
+    padding-bottom: 95% !important;
   }
 
   .mobile {
